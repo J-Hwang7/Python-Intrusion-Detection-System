@@ -12,7 +12,7 @@ By utilizing **scan_tracker**, the IDS maps each source IP to the port and times
 
 **Creating IDS**
 
-In a Linux terminal, create a new directory to house this project.
+In an Administrator PowerShell terminal, create a new directory to house this project.
 
 Afterwards, run these commands in the directory to install **Scapy** onto your machine.
 ```
@@ -20,3 +20,17 @@ python -m venv venv
 .\venv\Scripts\Activate.ps1
 pip install scapy
 ```
+
+To code the Scapy file, run and code the respective file
+```
+notepad sniffer.py
+```
+
+# Testing IDS
+
+To run an IDS test, first run the following command to receive the router IP address.
+  * The IP address is in the **Wireless LAN adapter Wi-Fi: Default Gateway** section
+```
+ipconfig
+```
+
