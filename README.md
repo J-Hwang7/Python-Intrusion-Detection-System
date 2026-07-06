@@ -5,5 +5,5 @@ Similar to a guard dog or a security booth, an **Intrusion Detection System (IDS
 
 # How it works
 
-\
+
 # Python IDS Procedures
