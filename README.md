@@ -12,16 +12,16 @@ By utilizing **scan_tracker**, the IDS maps each source IP to the port and times
 
 **Creating IDS**
 
-In an Administrator PowerShell terminal, create a new directory to house this project.
+1. In an Administrator PowerShell terminal, create a new directory to house this project.
 
-Afterwards, run these commands in the directory to install **Scapy** onto your machine.
+2. Afterwards, run these commands in the directory to install **Scapy** onto your machine.
 ```
 python -m venv venv
 .\venv\Scripts\Activate.ps1
 pip install scapy
 ```
 
-To code the IDS, run the following command to open the file that the code will be stored in.
+3. To code the IDS, run the following command to open the file that the code will be stored in.
  * **See** [sniffer.py](sniffer.py) **for example code**
 ```
 notepad sniffer.py
@@ -29,9 +29,25 @@ notepad sniffer.py
 
 # Testing IDS
 
-To run an IDS test, first run the following command to receive the router IP address.
+1. To run an IDS test, first run the following command to receive the router IP address.
   * The IP address is in the **Wireless LAN adapter Wi-Fi: Default Gateway** section
 ```
 ipconfig
 ```
 
+2. In another Administrator PowerShell terminal, run the following command to launch the IDS and sniff for packets.
+```
+python sniffer.py
+````
+
+3. Switch to the other PowerShell terminal. To receive a flag in the IDS, **Nmap** will be used to run a port scan of the first 200 ports.
+```
+ nmap -p 1-200 [IP Address]
+```
+
+4. Switch back to the terminal running the IDS and run ***Ctrl+C** to cancel the packet sniffing.
+   * Shift through the logs and find the flag. (Should have an alert on it)
+
+ # Licenses
+The content of this repository is to be used for educational purposes. Nmap and Scapy have their own licenses (View Respective GitHub repositories).
+   
