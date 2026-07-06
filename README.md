@@ -45,7 +45,7 @@ python sniffer.py
  nmap -p 1-200 [IP Address]
 ```
 
-4. Switch back to the terminal running the IDS and run ***Ctrl+C** to cancel the packet sniffing.
+4. Switch back to the terminal running the IDS and run **Ctrl+C** to cancel the packet sniffing.
    * Shift through the logs and find the flag. (Should have an alert on it)
 
  # Licenses
