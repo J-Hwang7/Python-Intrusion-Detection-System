@@ -32,8 +32,6 @@ python sniffer.py
 4. Switch back to the terminal running the IDS and run **Ctrl+C** to cancel the packet sniffing.
    * Shift through the logs and find the flag. (Should have an alert on it)
 
-Screenshot of detected scan: [IDS Testing Log.png](IDS Testing Log.png)
-
  # Licenses
 The content of this repository is to be used for educational purposes. Nmap and Scapy have their own licenses (View Respective GitHub repositories).
    
