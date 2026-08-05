@@ -3,13 +3,17 @@ Similar to a guard dog or a security booth, an **Intrusion Detection System (IDS
 
 **Author:** @J-Hwang7 **Date:** July 2026
 
+## Tools
+
+Scapy, Npcap, and Python
+
 # How it works
 By utilizing **scan_tracker**, the IDS maps each source IP to the port and timestamp at which it recently sent a SYN request. Afterwards, **is_syn_scan_packet** and **detect_port_scan(src_ip, dst_port)** are used to verify if the connection has an **ACK** flag and count the distinct ports that an IP address has SYN requests, within the last few seconds, to determine if a SYN port scan occurs. 
 
 
 # Testing IDS
 
-1. To run an IDS test, first run the following command to receive the router IP address.
+1. To run an IDS test, run the following command to receive the router IP address.
   * The IP address is in the **Wireless LAN adapter Wi-Fi: Default Gateway** section
 ```
 ipconfig
