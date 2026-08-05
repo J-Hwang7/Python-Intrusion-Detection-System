@@ -6,26 +6,6 @@ Similar to a guard dog or a security booth, an **Intrusion Detection System (IDS
 # How it works
 By utilizing **scan_tracker**, the IDS maps each source IP to the port and timestamp at which it recently sent a SYN request. Afterwards, **is_syn_scan_packet** and **detect_port_scan(src_ip, dst_port)** are used to verify if the connection has an **ACK** flag and count the distinct ports that an IP address has SYN requests, within the last few seconds, to determine if a SYN port scan occurs. 
 
-# Python IDS Procedures
-**Prerequisite Installation**
-- Npcap 1.88 for Windows
-
-**Creating IDS**
-
-1. In an Administrator PowerShell terminal, create a new directory to house this project.
-
-2. Afterwards, run these commands in the directory to install **Scapy** onto your machine.
-```
-python -m venv venv
-.\venv\Scripts\Activate.ps1
-pip install scapy
-```
-
-3. To code the IDS, run the following command to open the file that the code will be stored in.
- * **See** [sniffer.py](sniffer.py) **for example code**
-```
-notepad sniffer.py
-```
 
 # Testing IDS
 
