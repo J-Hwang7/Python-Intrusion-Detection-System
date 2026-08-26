@@ -13,6 +13,8 @@ By utilizing **scan_tracker**, the IDS maps each source IP to the port and times
 
 # Testing IDS
 
+**Disclaimer:** When testing the IDS system, please run it on a Wi-Fi network you own. 
+
 1. To run an IDS test, run the following command to receive the router IP address.
   * The IP address is in the **Wireless LAN adapter Wi-Fi: Default Gateway** section
 ```
